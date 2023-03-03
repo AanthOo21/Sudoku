@@ -13,6 +13,7 @@ public class Main {
         System.out.println();
         System.out.println("Sudoku 4x4");
 
+
         SudokuFactory4x4 factory = new SudokuFactory4x4();
         SudokuModel4x4 model = factory.getModel("ressource\\sudoku4x4.txt");
         SudokuVue4x4 vue = new SudokuVue4x4(model);
