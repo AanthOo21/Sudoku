@@ -6,13 +6,14 @@ import be.technifutur.sudoku.SudokuVue;
 public class SudokuVue4x4 implements SudokuVue {
 
     private static String format = """
-            +-----+-----+
-            | . . | . . |
-            | . . | . . |
-            +-----+-----+
-            | . . | . . |
-            | . . | . . |
-            +-----+-----+""".replace(".", "%s");
+                1 2   3 4
+              +-----+-----+
+            1 | . . | . . |
+            2 | . . | . . |
+              +-----+-----+
+            3 | . . | . . |
+            4 | . . | . . |
+              +-----+-----+""".replace(".", "%s");
     private SudokuModel4x4 model;
 
     public SudokuVue4x4(SudokuModel4x4 model){
